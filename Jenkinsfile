@@ -6,11 +6,9 @@ node(){
    }
   stage("Build"){
     
-    def directory = "devtest1"
-		dir(directory){
-      
-            sh "mvn package"
-		}	
+    steps { 
+               echo 'This is a minimal pipeline.'
+			
       }
   
 }
